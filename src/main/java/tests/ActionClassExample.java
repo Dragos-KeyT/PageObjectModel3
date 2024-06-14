@@ -55,7 +55,7 @@ public class ActionClassExample  extends BaseTest{
 		
 	}
 	
-	@Test
+	//@Test
 	public void sendMessageForm() {
 		
 		app.click(app.menu.contactsLink);
@@ -73,6 +73,23 @@ public class ActionClassExample  extends BaseTest{
 			.pause(Duration.ofMillis(2000))
 			.sendKeys(Keys.TAB, Keys.ENTER)
 		.perform();
+	}
+	
+	@Test
+	public void dragAndDropExample() {
+		
+		
+		app.click(app.menu.shopLink);
+	
+		
+		Actions action = new Actions(driver);
+		action.scrollByAmount(0, 600).perform();
+		
+		app.hoverElement(app.shop.filterSliderInitialPosition);
+		app.dragAndDrop(app.shop.filterSliderInitialPosition, 100, 0);
+		app.dragAndDrop(app.shop.filterSliderFinalPosition, -100, 0);
+		
+		
 	}
 	
 	
