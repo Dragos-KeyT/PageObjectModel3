@@ -88,18 +88,10 @@ public class JavascriptExecutorExample extends BaseTest{
 	@Test
 	public void example2() {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
-
-		
 		String alertaJs = "window.obj = function(){ alert('Alerta!!!!')}; window.obj.call();";
-		
 		jse.executeScript(alertaJs);
 		//jse.executeScript("window.obj = function(){ alert('Alerta!!!!')}; window.obj.call();");
-
 	}
-	
-	
-	
-	
-	
+		
 	
 }
