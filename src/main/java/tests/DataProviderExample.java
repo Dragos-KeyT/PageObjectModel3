@@ -52,9 +52,6 @@ public class DataProviderExample extends BaseTest{
 		return data;
 	}
 	
-	
-	
-	
 	@Test(dataProvider = "testDataForLogin" )
 	public void loginTest(String username, String password, boolean expected) {
 		
