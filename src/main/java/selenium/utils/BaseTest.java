@@ -27,7 +27,7 @@ public class BaseTest {
 		
 	}
 	
-	@AfterClass(alwaysRun = true)
+	//@AfterClass(alwaysRun = true)
 	public void tearDown() throws InterruptedException {
 		Thread.sleep(5000);//bad practice
 		//driver.close();//inchide tab-ul curent
